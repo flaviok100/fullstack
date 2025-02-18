@@ -1,0 +1,16 @@
+#nome{  
+
+    text-align: center;
+}
+
+.box{
+
+   border: 6;
+}
+
+
+a:hover{
+
+    color: red;
+
+}
