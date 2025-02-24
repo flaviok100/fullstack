@@ -1,16 +1,18 @@
+body{
+    background-color: whitesmoke;
+}
+
 #nome{  
 
     text-align: center;
 }
 
-.box{
-
-   border: 6;
+.central{
+    text-align: center;
 }
 
-
 a:hover{
-
     color: red;
 
 }
+
