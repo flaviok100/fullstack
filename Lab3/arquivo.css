@@ -1,0 +1,18 @@
+body{
+    background-color: whitesmoke;
+}
+
+#nome{  
+
+    text-align: center;
+}
+
+.central{
+    text-align: center;
+}
+
+a:hover{
+    color: red;
+
+}
+
