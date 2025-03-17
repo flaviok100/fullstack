@@ -1,0 +1,14 @@
+.cabeca{
+display: flex;
+text-align: center;
+justify-content: center;
+
+}
+
+.inverso{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
