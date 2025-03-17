@@ -1,8 +1,6 @@
-body{
-    background-color: whitesmoke;
-}
 
-#nome{  
+
+.nome{  
 
     text-align: center;
 }
@@ -16,3 +14,46 @@ a:hover{
 
 }
 
+
+.cabecalho_copy{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+
+    margin: 10px; 
+    padding: 50px;
+    
+    background-color: bisque;
+    font-size: 60px;
+    color: green;
+    border: solid 5px blue;
+    
+}
+
+
+.links_copy{
+background-color: lightskyblue;
+text-align: center;
+padding: auto;
+
+}
+.centraliza_copy{
+    text-align: center;
+    
+
+
+}
+.estilo_copy{
+    background-color:lightgray ;
+
+
+}
+.letra_copy{
+    color: lightslategray;
+}
+.cenraliza_copy_tabela{
+    
+    text-align: center;
+    display: block;
+
+}
