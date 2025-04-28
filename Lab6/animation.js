@@ -1,68 +1,45 @@
+
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
-let circulo = {
-    x: 200,
-    y: 200,
+let gato = {
+    x: 100,
+    y: 100,
     raio: 50,
-    cor: "blue",
+    img: new Image(),
     desenha: function(){
+        this.img.src = 'gato.png';
         ctx.beginPath();
-        ctx.fillStyle = this.cor;
-        ctx.arc(this.x,this.y,this.raio,0,2*Math.PI);
-        ctx.fill()
+        ctx.drawImage(this.img, this.x, this.y, 2*this.raio, 2*this.raio);
         ctx.closePath();
     }
 }
 
-// function animacao(){
-//     ctx.clearRect(0,0,400,400)
-//     circulo.desenha();
-//     requestAnimationFrame(animacao)
-// }
-
-// animacao();
-// document.addEventListener('keydown',function(evento){
-//     tecla = evento.key;
-//     console.log(tecla);
-//     if(tecla == 'ArrowUp')   {circulo.y = circulo.y-3}  
-//     if(tecla == 'ArrowDown') {circulo.y = circulo.y+3}  
-//     if(tecla == 'ArrowLeft') {circulo.x = circulo.x-3}  
-//     if(tecla == 'ArrowRight'){circulo.x = circulo.x+3}  
-// })
-
 function animacao(){
     ctx.clearRect(0,0,400,400)
-    circulo.desenha();
-    requestAnimationFrame(animacao)
+    gato.desenha();
+    requestAnimationFrame(animacao) 
 }
 animacao();
 document.addEventListener('mousemove',function(evento){
+    
     let rect = canvas.getBoundingClientRect();
     let x_mouse = evento.clientX - rect.left;
     let y_mouse = evento.clientY - rect.top;
     console.log(x_mouse,y_mouse);
-    circulo.x = x_mouse;
-    circulo.y = y_mouse;
-   
-    if (x_mouse >250){
-        circulo.x=250;}
-    if (x_mouse <50){
-        circulo.x=50;}
-    if (y_mouse>250){
-        circulo.y=250;}
-    if (y_mouse<50){
-        circulo.y=50;}
+    gato.x = x_mouse;
+    gato.y = y_mouse;
+
+    if (x_mouse > 225)
+        gato.x=225;
+    if (x_mouse < -25)
+        gato.x=-25;
+    if (y_mouse > 215)
+        gato.y=215;
+    if (y_mouse < -20)
+         gato.y=-20;   
+    })
     
-})
-
-
-
-
-
-
-
-
 
 
 
