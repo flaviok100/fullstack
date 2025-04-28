@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+#canvas{
+    background-color: white;
+}
+
+#bola{
+
+    width: 20;
+    height: 20;
+}
