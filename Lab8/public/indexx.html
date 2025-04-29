@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="caixa">
+        <h1>Meu primeiro servidor</h1>
+    </div>
+
+    <form  method="get"  action="/inicio">
+        <input type="submit" value="Clic para iniciar">
+    </form>
+    
+    <h2> Exemplo de cadastro de usuario usando GET</h2>
+    <form method="get" action="/cadastrar">
+        <p>nome: <input type="text" name="nome"></p>
+        <p>email: <input type="email" name="email"></p>
+        <p>Senha: <input type="password" name="senha"></p>
+        <input type="submit" value="cadastrar">
+    </form>
+
+    <h2> Exemplo de cadastro de usuario usando POST</h2>
+    <form method="post" action="/cadastrar">
+        <p>nome: <input type="text" name="nome"></p>
+        <p>email: <input type="email" name="email"></p>
+        <p>Senha: <input type="password" name="senha"></p>
+        <input type="submit" value="cadastrar">
+    </form>
+
+
+        <h2>Exemplo de for no ejs</h2>
+        <form method="get" action="/for_ejs" >
+            <p>nuemro de DIVs: <input type="number"></p>
+            <input type="submit" name="" id="">
+
+        </form>
+</body>
+</html>
